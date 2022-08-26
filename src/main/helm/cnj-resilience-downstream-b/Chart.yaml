@@ -1,0 +1,6 @@
+apiVersion: v2
+name: cnj-resilience-downstream-b
+description: "${project.description}"
+type: application
+version: 4.0.0
+appVersion: "${project.version}"
