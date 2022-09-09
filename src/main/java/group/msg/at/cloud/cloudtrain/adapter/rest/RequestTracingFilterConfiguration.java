@@ -4,11 +4,9 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.filter.CommonsRequestLoggingFilter;
-import org.springframework.web.filter.ForwardedHeaderFilter;
 
 /**
- * Adds a {@link ForwardedHeaderFilter} processing all inbound REST requests passed through a router correctly to
- * this applications filter chain.
+ * Adds a {@link CommonsRequestLoggingFilter} logging all inbound HTTP requests and outbound HTTP responses.
  */
 @Configuration
 public class RequestTracingFilterConfiguration {

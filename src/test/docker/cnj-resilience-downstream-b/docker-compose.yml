@@ -15,7 +15,6 @@ services:
       - "38089:8089"
     environment:
       JAVA_OPTS: "-javaagent:/home/spring/org.jacoco.agent.jar=output=tcpserver,address=*,port=8089"
-      SPRING_PROFILES_ACTIVE: cloud
 
 
 

@@ -9,7 +9,7 @@
     <description>Simplest possible cloud native java backend based on Spring Boot</description>
     <properties>
         <!-- new Maven version management -->
-        <revision>1.0.0</revision>
+        <revision>1.0.1</revision>
         <sha1></sha1>
         <changelist></changelist>
         <!-- common properties -->
@@ -124,6 +124,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>${logstash.logback.encoder.version}</version>
         </dependency>
         <!-- showcase specific section -->
         <!-- =========================== -->
