@@ -27,10 +27,11 @@ public class UnexpectedBehaviour {
         return slowResponse;
     }
 
-    public void setUnexpectedBevaviour(boolean noResponse, boolean slowResponse, boolean alwaysFail) {
+    public void setUnexpectedBehaviour(boolean noResponse, boolean slowResponse, boolean alwaysFail) {
         this.noResponse = noResponse;
         this.slowResponse = slowResponse;
         this.alwaysFail = alwaysFail;
+        logger.info("set unexpected behaviour to noResponse [{}] slowResponse [{}] alwaysFail [{}]", this.noResponse, this.slowResponse, this.alwaysFail);
     }
 
     public void applyUnexpectedBehaviour() {

@@ -24,7 +24,7 @@
         <!-- common test dependencies -->
         <junit.version>5.9.2</junit.version>
         <restassured.version>5.2.1</restassured.version>
-        <cnj.common.test.core.version>0.9.0</cnj.common.test.core.version>
+        <cnj.common.test.core.version>1.0.0</cnj.common.test.core.version>
         <cnj.common.test.jakarta.version>0.1.0</cnj.common.test.jakarta.version>
         <!-- common persistence dependencies -->
         <!-- common security dependencies -->
@@ -130,6 +130,11 @@
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
             <version>${logstash.logback.encoder.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>group.msg.at.cloud.common</groupId>
+            <artifactId>cnj-common-observability-spring</artifactId>
+            <version>1.0.0</version>
         </dependency>
         <!-- showcase specific section -->
         <!-- =========================== -->
