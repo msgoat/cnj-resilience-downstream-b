@@ -50,18 +50,6 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: cloud
-            - name: SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK_SET_URI
-              value: {{ .Values.security.oidc.jwksUri | quote }}
-            - name: SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI
-              value: {{ .Values.security.oidc.issuer | quote }}
-            - name: OPENTRACING_JAEGER_ENABLED
-              value: {{ .Values.tracing.enabled | quote }}
-            - name: OPENTRACING_JAEGER_UDP_SENDER_HOST
-              value: {{ .Values.tracing.jaeger.agent.host | quote }}
-            - name: OPENTRACING_JAEGER_UDP_SENDER_PORT
-              value: {{ .Values.tracing.jaeger.agent.port | quote }}
-            - name: OPENTRACING_JAEGER_LOGSPANS
-              value: {{ .Values.tracing.jaeger.logSpans | quote }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
