@@ -9,3 +9,14 @@ The behaviour of the service can be controlled via a [SabotageController](src/ma
 ## Release information
 
 Check [changelog](changelog.md) for latest version and release information.
+
+## HOW-TO build this application locally
+
+If all prerequisites are met, just run the following Maven command in the project folder:
+
+```shell 
+mvn clean verify -P pre-commit-stage
+```
+
+Build results: a Docker image containing the showcase application.
+
